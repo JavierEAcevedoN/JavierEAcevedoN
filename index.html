@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script defer src="./script.js"></script>
+        <title>JavierEAcevedoN</title>
+    </head>
+    <body>
+        <header>
+            <img src="./resources/img/FotoJavier.png" alt="foto" />
+            <div>
+                <h1>Javier Eduardo Acevedo Noguera</h1>
+                <h2>Desarrollador de Software</h2>
+            </div>
+        </header>
+        <nav id="navegacion">
+            <img src="./resources/img/Menu.png" alt="menu" id="botonImg">
+            <div style="display: none;" id="links">
+                <a href="#informacion">Informacion</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos_importantes">Proyetos Importantes</a>
+                <a href="#proyectos_generales">Proyectos Generales</a>
+            </div>
+        </nav>
+        <main>
+            <section id="informacion" class="fondo2">
+                <div>
+                    <h1>Acerca de mì</h1>
+                    <p>
+                        Me destaco por mi habilidad de resolver problemas a través de la lógica.
+                        <br>
+                        A través de mi formación he desarrollado habilidades relacionadas con el trabajo en equipo además de una muy buena comunicación. 
+                        <br>
+                        Mi objetivo profesional se centra en el desarrollo de sistemas de automatización e innovación, ya que encuentro mediante el código el modo de automatizar tareas diarias.
+                    </p>
+                </div>
+                <div>
+                    <h1>Mision</h1>
+                    <p>
+                        Desarrollar programas que permitan la optimización de procesos y faciliten el acceso al cambio tecnologico.
+                    </p>
+                </div>
+                <div>
+                    <h1>Vision</h1>
+                    <p>
+                        Ser lider en el desarrollo de soluciones tecnologicas que transforman sistemas complejos en herramientas accesibles y eficientes.
+                    </p>
+                </div>
+            </section>
+            <section id="servicios">
+                <h1>Servicios</h1>
+                <div>
+                    <p>Creo programas de gestion de datos en Python, JavaScript y Java.</p>
+                    <p>Maqueto y codifico paginas web.</p>
+                </div>
+            </section>
+            <section id="proyectos_importantes" class="fondo2">
+                <h1>Proyectos</h1>
+                <h2>Destacados</h2>
+                <div class="proyecto">
+                    <img src="./resources/img/Proyecto1.png" alt="foto_proyecto" />
+                    <div>
+                        <h1>Gestión de Servicios</h1>
+                        <p>
+                            Desarrollo de un programa para la gestión de clientes, productos y servicios de un entrono simulado de Claro, hecho en Python.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/Gestion-de-servicios')">Ver</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./resources/img/Proyecto2.png" alt="foto_proyecto" />
+                    <div>
+                        <h1>Gestión de Registros</h1>
+                        <p>
+                            Desarrollo de un sistema de gestión de registros de películas, libros y series, en el cual se puede llevar un registro de los recursos que se están viendo, se han terminado o que están pendientes por ver.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/Gestion-de-registros')">Ver</button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./resources/img/Proyecto3.png" alt="foto_proyecto" />
+                    <div>
+                        <h1>Finca El Primer Mundo</h1>
+                        <p>
+                            Desarrollo de una base de datos de una finca en la cual se simula los datos de la finca, y con varias funcionalidades como la consulta de información relevante, automatización de datos, cálculo de eficiencia. 
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/KevinJGV/Finca_El_Primer_Mundo_MYSQL')">Ver</button>
+                    </div>
+                </div>
+            </section>
+            <section id="proyectos_generales">
+                <h1>Proyectos</h1>
+                <h2>Generales</h2>
+                <div class="proyectos">
+                    <div class="proyecto">
+                        <img src="./resources/img/Proyecto4.png" alt="foto_proyecto" />
+                        <h1>API de StarWars</h1>
+                        <p>
+                            Consumo de la api de Star Wars en la pagina se puede buscar todo el contenido de la API de Star Wars, se puede buscar por categorias, y se puede buscar por filtros de busqueda.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/API-de-StarWars')">Ver</button>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./resources/img/Proyecto5.png" alt="foto_proyecto" />
+                        <h1>Tienda de Computadoras</h1>
+                        <p>
+                            Una tienda digital de computadoras donde se venden laptos, mini pc's y pc's de mesa contiene los productos y los productos destacados, las paginas de informacion contienen la informacion de cada uno de los productos disponibles y la pagina del carrito contiene los productos que se van a comprar con la cantidad y el total.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/Tienda-de-Computadoras')">Ver</button>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./resources/img/Proyecto6.png" alt="foto_proyecto" />
+                        <h1>API de The Movie Data Base</h1>
+                        <p>
+                            Consumo de la api de The Movie Data Base en la pagina muestra el contenido de la API de The movie Data Base en donde aparecen todas las peliculas.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/API-Movies')">Ver</button>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./resources/img/Proyecto7.png" alt="foto_proyecto" />
+                        <h1>The Clothes Shop</h1>
+                        <p>
+                            Un e-commerce en donde se venden productos como chaquetas, pantalones y camizetas.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/The-Clothes-Shop')">Ver</button>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./resources/img/Proyecto8.png" alt="foto_proyecto" />
+                        <h1>Gestion de Países</h1>
+                        <p>
+                            Programa para agregar, quitar y buscar Ciudades, en los países de Colombia y Argentina.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/Gestion-de-Paises')">Ver</button>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./resources/img/Proyecto9.png" alt="foto_proyecto" />
+                        <h1>Mokepon</h1>
+                        <p>
+                            Programa en el cual eliges una mascota para pelear con otra mascota dentro de un mapa.
+                        </p>
+                        <button onclick="abrirPestana('https://github.com/JavierEAcevedoN/Mokepon')">Ver</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="fondo2">
+            <a href="mailto:je.acevedonoguera2021@gmail.com">
+                <img src="./resources/img/Mail.png" alt="correo" />
+            </a>
+            <a href="https://github.com/JavierEAcevedoN" target="_blank">
+                <img src="./resources/img/GitHub.png" alt="gituhb" />
+            </a>
+            <a href="https://www.linkedin.com/in/javier-eduardo-acevedo-noguera/" target="_blank">
+                <img src="./resources/img/LinkedIn.png" alt="linkedin" />
+            </a>
+        </footer>
+    </body>
+</html>
