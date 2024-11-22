@@ -1,13 +1,13 @@
-const botonImg = document.getElementById("botonImg");
+const botonSvg = document.getElementById("botonSvg");
 const botonLinks = document.getElementById("links")
-botonImg.addEventListener("click", () => {
+botonSvg.addEventListener("click", () => {
 
-    botonImg.setAttribute("style","display: none")
+    botonSvg.setAttribute("style","display: none")
     botonLinks.setAttribute("style","display: flex")
 })
 botonLinks.addEventListener("click", () => {
 
-    botonImg.setAttribute("style","display: block")
+    botonSvg.setAttribute("style","display: block")
     botonLinks.setAttribute("style","display: none")
 })
 const abrirPestana = link => {

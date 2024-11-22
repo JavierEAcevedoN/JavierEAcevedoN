@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* general */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     color: #F3F3F3;
-    background-color: #21005D;
+    background-color: #21005d;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
     margin: 0px;
 }
 h2 {
@@ -44,7 +48,8 @@ header div {
     text-align: right;
 }
 header img {
-    width: 230px;
+    max-width: 220px;
+    width: 70vw;
     filter: drop-shadow(0px 0px 15px #ffffff);
     transition-duration: 1s;
     align-self: flex-end;
@@ -60,21 +65,22 @@ header h1 {
 header h1:hover {
     font-size: 54px;
     filter: drop-shadow(0px 0px 15px #ffffff);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 header h2 {
     font-size: 26px;
-    font-weight: lighter;
+    font-weight: 300;
     filter: drop-shadow(0px 0px 10px #ffffff);
     transition-duration: 1s;
 }
 header h2:hover {
     font-weight: lighter;
     filter: drop-shadow(0px 0px 15px #ffffff);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 /* nav */
 nav {
+    z-index: 1;
     position: fixed;
     top: 10px;
     background-color: #3E267A;
@@ -83,28 +89,32 @@ nav {
 }
 nav div {
     flex-direction: column;
+    gap: 2px;
 }
 nav div a {
     color: white;
+    background-color: #21005d;
+    padding: 5px;
+    border-radius: 15px;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
 }
-nav img {
-    width: 30px;
+nav svg {
     cursor: pointer;
 }
 /* section information */
 section#informacion {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 120px;
+    justify-content: center;
     color: #FFFFFFCC;
     text-align: center;
 }
 section#informacion p {
-    width: 300px;
+    max-width: 300px;
+    width: 60vw;
     padding: 5px;
     background-color: #FFFFFFCC;
     color: #1E1E1E;
@@ -113,17 +123,20 @@ section#informacion p {
 }
 /* section servicios*/
 section#servicios {
-    padding: 30px;
+    padding: 32px 80px;
+    display: flex;
+    flex-direction: column;
 }
 section#servicios div {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 120px;
+    justify-content: center;
     align-items: start;
 }
 section#servicios div p {
-    width: 300px;
+    max-width: 300px;
+    width: 60vw;
     padding: 5px;
     background-color: #FFFFFFCC;
     color: #1E1E1E;
@@ -132,15 +145,24 @@ section#servicios div p {
 }
 /* section proyectos_importantes */
 section#proyectos_importantes {
-    padding: 30px;
+    padding: 32px 80px;
+    display: flex;
+    flex-direction: column;
+}
+section#proyectos_importantes div {
+    align-self: center;
 }
 section#proyectos_importantes div.proyecto {
     display: flex;
+    max-width: 1200px;
+    width: 70vw;
     gap: 20px;
 }
 /* section proyectos_generales */
 section#proyectos_generales {
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 80px;
 }
 section#proyectos_generales div.proyectos {
     display: flex;
@@ -152,7 +174,12 @@ section#proyectos_generales div.proyectos div.proyecto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    max-width: 350px;
+    width: 70vw;
+}
+section#proyectos_generales div.proyectos div.proyecto h1{
+    filter: drop-shadow(0px 0px 8px #4f378a);
+    overflow-wrap: anywhere;
 }
 /* div proyecto */
 div.proyecto {
@@ -162,7 +189,8 @@ div.proyecto {
     padding: 15px;
 }
 div.proyecto img {
-    height: 170px;
+    max-height: 180px;
+    height: 25vw;
 }
 div.proyecto p {
     color: #757575;
@@ -170,10 +198,11 @@ div.proyecto p {
 /* footer */
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 15px;
     align-items: center;
-    gap: 15px;
+    gap: 50px;
 }
 footer h1{
     font-size: 16px;
@@ -181,10 +210,21 @@ footer h1{
 footer a {
     color: transparent;
 }
-footer img {
-    width: 40px;
+@media (max-width:914px) {
+    section#servicios {
+        align-items: center;
+        padding: 0px;
+    }
+    section#proyectos_generales {
+        align-items: center;
+        padding: 0px;
+    }
+    section#proyectos_importantes {
+        align-items: center;
+        padding: 0px;
+    }
 }
-@media (max-width:600px) {
+@media (max-width:800px) {
     section#proyectos_importantes div.proyecto {
         justify-content: center;
         flex-wrap: wrap;
@@ -193,5 +233,21 @@ footer img {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+@media (max-width:500px) {
+    body {
+        overflow-wrap: anywhere;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        overflow-wrap: anywhere;
+    }
+    header div {
+        text-align: center;
+    }
+    header img {
+        align-self: center;
     }
 }
