@@ -10,7 +10,7 @@ body {
     margin: 0px;
 }
 h2 {
-    color: #757575;
+    color: #c8c8c8;
     font-size: 19px;
 }
 p {
@@ -18,10 +18,11 @@ p {
 }
 .fondo2 {
     background-color: #4F378A;
-    color: #1E1E1E;
+    color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 .fondo2 h2 {
-    color: #757575;
+    color: #c8c8c8;
 }
 button {
     width: 71px;
@@ -65,18 +66,18 @@ header h1 {
 header h1:hover {
     font-size: 54px;
     filter: drop-shadow(0px 0px 15px #ffffff);
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 header h2 {
     font-size: 26px;
-    font-weight: 300;
+    font-weight: 400;
     filter: drop-shadow(0px 0px 10px #ffffff);
     transition-duration: 1s;
 }
 header h2:hover {
     font-weight: lighter;
     filter: drop-shadow(0px 0px 15px #ffffff);
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 /* nav */
 nav {
@@ -107,32 +108,39 @@ nav svg {
 section#informacion {
     display: flex;
     flex-wrap: wrap;
-    gap: 120px;
-    justify-content: center;
+    flex-direction: column;
     color: #FFFFFFCC;
     text-align: center;
 }
-section#informacion p {
-    max-width: 300px;
-    width: 60vw;
+section#informacion div p {
+    width: 70vw;
     padding: 5px;
     background-color: #FFFFFFCC;
     color: #1E1E1E;
-    text-align: justify;
+    text-align: justify ;
     border-radius: 10px;
+    justify-self: center;
+}
+section#informacion div.MV {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section#informacion div.MV p {
+    max-width: 300px;
+    width: 60vw;
 }
 /* section servicios*/
 section#servicios {
-    padding: 32px 80px;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
 section#servicios div {
     display: flex;
     flex-wrap: wrap;
-    gap: 120px;
-    justify-content: center;
     align-items: start;
+    justify-content: space-around;
 }
 section#servicios div p {
     max-width: 300px;
@@ -145,8 +153,8 @@ section#servicios div p {
 }
 /* section proyectos_importantes */
 section#proyectos_importantes {
-    padding: 32px 80px;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 section#proyectos_importantes div {
@@ -161,8 +169,8 @@ section#proyectos_importantes div.proyecto {
 /* section proyectos_generales */
 section#proyectos_generales {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    padding: 32px 80px;
 }
 section#proyectos_generales div.proyectos {
     display: flex;
@@ -174,11 +182,11 @@ section#proyectos_generales div.proyectos div.proyecto {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     max-width: 350px;
     width: 70vw;
 }
 section#proyectos_generales div.proyectos div.proyecto h1{
-    filter: drop-shadow(0px 0px 8px #4f378a);
     overflow-wrap: anywhere;
 }
 /* div proyecto */
@@ -192,8 +200,13 @@ div.proyecto img {
     max-height: 180px;
     height: 25vw;
 }
+div.proyecto h1 {
+    color: #414141;
+}
 div.proyecto p {
     color: #757575;
+    font-weight: 600;
+    text-align: justify;
 }
 /* footer */
 footer {
@@ -209,20 +222,6 @@ footer h1{
 }
 footer a {
     color: transparent;
-}
-@media (max-width:914px) {
-    section#servicios {
-        align-items: center;
-        padding: 0px;
-    }
-    section#proyectos_generales {
-        align-items: center;
-        padding: 0px;
-    }
-    section#proyectos_importantes {
-        align-items: center;
-        padding: 0px;
-    }
 }
 @media (max-width:800px) {
     section#proyectos_importantes div.proyecto {
@@ -249,5 +248,8 @@ footer a {
     }
     header img {
         align-self: center;
+    }
+    footer {
+        gap: 10px;
     }
 }
