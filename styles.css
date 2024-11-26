@@ -130,7 +130,35 @@ section#informacion div.MV p {
     max-width: 300px;
     width: 60vw;
 }
-/* section servicios*/
+/* section certificaciones */
+section#certificaciones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+section#certificaciones div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #D0BCFF;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 1200px;
+    width: 70vw;
+}
+section#certificaciones  div img {
+    max-height: 180px;
+    height: 25vw;
+}
+section#certificaciones div h1{
+    color: #757575;
+    text-align: justify;
+}
+    /* section servicios*/
 section#servicios {
     text-align: center;
     display: flex;
